@@ -32,3 +32,6 @@ model.fit(x_train, y_train, epochs = 1000, batch_size=20, validation_data=(x_tes
 
 # save the model
 model.save('weights.h5')
+
+#display accuracy
+print("\n%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
